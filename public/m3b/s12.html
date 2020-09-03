@@ -22,6 +22,7 @@
     <script type="text/javascript">
         function getInfoPlain() {
             let request = new XMLHttpRequest();
+            // non sto chiamando callback, la sto solo assegnando ad una variabile
             request.onload = callback;
             request.open("GET", "data/tom.json");
             request.send();
@@ -29,18 +30,22 @@
 
         function callback() {
             let target = document.getElementById('target');
+            // se qualcosa non è andato bene, esplicita il problema nel valore del target
             if (this.status != 200) {
                 target.value += "[" + this.status + "]\n";
                 return;
             }
             let json = JSON.parse(this.responseText);
 
+            // Scrittura nella textArea
             target.value += json.name + '\n';
             target.value += json.job.title + '\n';
             target.value += json.job.languages + '\n';
         }
 
         function getInfoJQuery() {
+            // variabile $ = stiamo lavorando su jQuery, è un alias
+            // jQuery.getJSON è lo stesso comando
             $.getJSON("data/tom.json", (json) => {
                 let target = document.getElementById('target');
                 target.value += json.name + '\n';

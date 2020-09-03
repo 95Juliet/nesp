@@ -16,8 +16,10 @@
     <!-- !!! no action specified !!! -->
     <form action="" method="post">
         <div>
+            <!-- questa label è collegata all'input sottostante -->
+            <!-- l'alternativa è inserire l'input direttamente nella label, dopo Name: -->
             <label for="name">Name:</label>
-            <input type="text" id="name" name="sender">
+            <input type="text" id="name" name="sender" required>
         </div>
         <div>
             <label for="msg">Message:</label>

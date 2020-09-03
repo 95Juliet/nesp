@@ -23,8 +23,11 @@
     <script type="text/javascript">
         let target = document.getElementById('target');
 
+        // Funzione anonima
+        // come reagisce il bottone quando qualcuno lo clicca
         document.getElementById('go').onclick = () => {
-            // target.innerHTML = '';
+            // target.innerHTML = ''; -> contenuto target
+            // child = elementi della lista
             while (target.firstChild) {
                 target.removeChild(target.firstChild);
             }

@@ -1,0 +1,48 @@
+body {
+    font-family: Sans-serif;
+    background-color: #FFE7D4; 
+}
+
+/* Inserire unità di misura, altrimenti non va! */
+.myimage > img:hover {
+    width: 40%;
+}
+
+h1, h2, h3 {
+    color: #494E5F;
+}
+
+.blocks {
+    border: 3px solid #494E5F;
+    background-color: #494E5F;
+}
+
+.titles {
+    color: white;
+}
+
+#nametitle {
+    font-style: oblique;
+}
+
+#listadatipersonali {
+    list-style-type: square;
+}
+
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
+    Width: 50%;
+    }
+    td, th {
+    border: 1px solid black;
+    padding: 3px;
+    text-align: center;
+    }
+    th {
+    background-color: #494E5F;
+    color: white;
+    }
+    td {
+    background-color: #FFE7D4;
+    }

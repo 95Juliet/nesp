@@ -11,6 +11,7 @@ console.log("Tom is at the beginning?", s.startsWith('Tom'));
 console.log("Sally is at the end?", s.endsWith('Sally'));
 console.log("Bob is in?", s.includes('Bob'));
 
+// trova la virgola successiva alla posizione idx
 let end = s.indexOf(',', idx);
 console.log("next comma position", end);
 console.log('slice [' + idx + '..' + end + ')', s.slice(idx, end));

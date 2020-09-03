@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Curriculum vitae</title>
+    <link rel="stylesheet" type="text/css" href="css/cv.css">
+</head>
+
+<body>
+
+    <figure align="center">
+        <img src="pictures/cv.jpg" alt="Giulia Pontiggia" width="150">
+    </figure>
+
+    <h1 id="nametitle" align="center">Giulia Pontiggia</h1>
+
+    <div class="blocks">
+        <h2 class="titles">Dati Personali</h2>
+    </div>
+
+    <p>
+    <ul id="listadatipersonali">
+        <li>Indirizzo: Via Andrea Verrocchio 30, 20129, Milano, Italia </li>
+        <li>Email: giulia95.pontiggia@gmail.com </li>
+        <li>Numero di telefono: (+39)3475383776 </li>
+        <li><a href="https://www.linkedin.com/in/giulia-pontiggia-7ab173196/"> LinkedIn</a> </li>
+    </ul>
+    </p>
+    <hr>
+
+    <div class="blocks">
+        <h2 class="titles">Formazione</h2>
+    </div>
+
+    <p>
+        <b>Java Academy</b> <br>
+        <i>OverNet Education | Luglio 2020 - presente</i>
+    </p>
+
+    <p>
+        <b>Laurea Magistrale in Ingegneria Biomedica</b> <br>
+        <a href="https://www.polimi.it/">Politecnico di Milano</a> <i> | Settembre 2017 - Giugno 2020</i>
+    </p>
+
+    <p>
+        <b>Laurea Triennale in Ingegneria Biomedica</b> <br>
+        <a href="https://www.polimi.it/">Politecnico di Milano</a> <i> | Settembre 2014 - Settembre 2017</i>
+    </p>
+    <hr>
+
+    <div class="blocks">
+        <h2 class="titles">Esperienza Lavorativa</h2>
+    </div>
+    <p>
+        <b>Tutor</b> <br>
+        <i>Insegnante di Italiano per persone straniere | 2019 – 2020</i>
+    </p>
+
+    <p>
+        <b>Allenatrice di Ginnastica Artistica</b> <br>
+        <i>ProPatria Milano 1883 | 2011 – 2014 </i>
+    </p>
+    <hr>
+
+    <div class="blocks">
+        <h2 class="titles">Attività extracurriculari</h2>
+    </div>
+    <p>
+        <b>SheTech Coding Bootcamp – Python e Machine Learning</b> <br>
+        <a href="https://shetechitaly.org/">SheTech</a> <i> Milano | 15 Giugno 2019</i>
+    </p>
+
+    <p>
+        <a href="https://wimc.wum.edu.pl/"><b>12th Warsaw International Medical Congress</b></a> <br>
+        <i> Warsaw | 2016</i>
+    </p>
+    <hr>
+
+    <div class="blocks">
+        <h2 class="titles">Competenze</h2>
+    </div>
+    <h3>Competenze IT</h3>
+
+    <table>
+        <tr>
+            <th scope="col"><b>Livello di conoscienza</b></th>
+            <th scope="col">Basso</th>
+            <th scope="col">Medio</th>
+            <th scope="col">Alto</th>
+        </tr>
+
+        <tr>
+            <th scope="row">Java</th>
+            <td>X</td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <th scope="row">SQL</th>
+            <td>X</td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <th scope="row">HTML</th>
+            <td>X</td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <th scope="row">Python</th>
+            <td></td>
+            <td>X</td>
+            <td></td>
+        </tr>
+
+    </table>
+
+    <h3>Lingue</h3>
+    <table>
+        <tr>
+            <th scope="col"><b>Livello di conoscienza</b></th>
+            <th scope="col">Base</th>
+            <th scope="col">Intermedio</th>
+            <th scope="col">Fluente</th>
+            <th scope="col">Madrelingua</th>
+        </tr>
+
+        <tr>
+            <th scope="row">Italiano</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>X</td>
+        </tr>
+
+        <tr>
+            <th scope="row">Inglese</th>
+            <td></td>
+            <td></td>
+            <td>X</td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <th scope="row">Tedesco</th>
+            <td>X</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <h4>Contattami per un lavoro:</h4>
+    <form>
+        <fieldset>
+            <legend>Dati Personali</legend>
+            <div>
+                Nome: <input type="text" name="nome" required maxlength="25">
+            </div>
+
+            <div>
+                Cognome: <input type="text" name="cognome" required maxlength="25">
+            </div>
+
+            <div>
+                Azienda: <input type="text" name="azienda" required>
+            </div>
+
+            <div>
+                Data di inizio: <input type="date" name="datainizio">
+            </div>
+        </fieldset>
+
+        <div>
+            Tipo di posizione
+            <select name="Tipodiposizione">
+                <option value="none" selected>-</option>
+                <option value="BiomedicalEngineer">Biomedical Engineer</option>
+                <option value="Programmer">Programmer</option>
+                <option value="Altro">Altro</option>
+            </select>
+        </div>
+        <hr>
+
+        <div>
+            Linguaggi di programmazione richiesti
+            <input type="checkbox" id="langJ" name="lang" value="Java">
+            <label for="langJ">Java</label>
+            <input type="checkbox" id="langPy" name="lang" value="Python">
+            <label for="langPy">Python</label>
+            <input type="checkbox" id="langSQL" name="lang" value="SQL">
+            <label for="langSQL">SQL</label>
+            <input type="checkbox" id="langR" name="lang" value="R">
+            <label for="langR">R</label>
+            <input type="checkbox" id="langHTML" name="lang" value="HTML">
+            <label for="langHTML">HTML</label>
+        </div>
+        <hr>
+
+        <div>
+            Descrizione della posizione: <textarea id="msg" name="message"></textarea>
+        </div>
+
+        <div>
+            <input type="submit" value="Submit" />
+        </div>
+
+        <div>
+            <input type="reset" value="Reset" />
+        </div>
+    </form>
+
+</body>

@@ -1,5 +1,6 @@
 // string
 let name = 'Bob';
+// può stampare un numero qualunque di parametri
 console.log(name, typeof name);
 
 // number
@@ -17,10 +18,12 @@ let dog = {
 };
 
 console.log(dog, typeof dog);
+// concatenzaione
 console.log(dog.name + ' breed is ' + dog.breed);
 console.log(dog['name'] + 'breed is ' + dog['breed']);
 
 // array is kind of object
+// può contenere diversi tipi di variabili -> non ha un tipo
 let data = [1, 'Tom', false];
 console.log(data, typeof data);
 

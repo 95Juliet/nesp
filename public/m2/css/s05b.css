@@ -1,4 +1,5 @@
 p {
+    /* con la notazione !important questa regola ha la precedenza */
     color: red /*!important*/;
     font-size: 11px;
 }

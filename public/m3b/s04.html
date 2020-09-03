@@ -21,8 +21,12 @@
     <button>Three</button>
 
     <script type="text/javascript">
+        // Solitamente per questo si usa CSS, ma si riesce anche in JavaScript
+        // Colore background
         document.bgColor = 'lightyellow';
+        // Colore font
         document.fgColor = 'blue';
+        // Aggiunge ! al document title
         document.title += '!';
 
         let target = document.getElementById('target');
@@ -31,9 +35,11 @@
         let ones = document.getElementsByClassName('one');
         target.value += `${ones.length} element(s) of class one\n`;
 
+        // Legge tutti i button che ci sono nella pagina
         let buttons = document.getElementsByTagName('button');
         target.value += `${buttons.length} button(s)\n`;
 
+        // Legge tutti i button all'interno di un div
         let sel = document.querySelectorAll('div>button');
         target.value += `${sel.length} button(s) in div\n`;
     </script>

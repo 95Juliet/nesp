@@ -15,13 +15,16 @@
 
     <textarea id="target" rows="20" cols="80"></textarea>
     <div>
+        <!-- onclick: premendo sul bottone viene eseguita una certa funzione -->
         <input type="button" value="alert" onclick="alert('alert!');">
         <input type="button" value="confirm" onclick="checkConfirm();">
     </div>
 
     <script type="text/javascript">
-        let target = document.getElementById('target');
+        let target = document.getElementById('target'); //textarea
 
+        // concatena il valore della textarea con questa stringa
+        // proprietà di window -> dimensioni della finestra
         target.value += `window heights: ${window.outerHeight}, ${window.innerHeight}\n`;
         target.value += `window widths: ${window.outerWidth}, ${window.innerWidth}\n`;
 
